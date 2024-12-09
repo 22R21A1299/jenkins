@@ -7,18 +7,20 @@ pipeline {
                 echo 'Build job'
             }
         }
-stage('Deliver') {
+        stage('Deliver') {
             steps {
-                echo 'deliver job'
-}
-}stage('Test') {
+                echo 'Deliver job'
+            }
+        }
+        stage('Test') {
             steps {
                 echo 'Test job'
-}}
-stage('Deploy') {
+            }
+        }
+        stage('Deploy') {
             steps {
                 echo 'Deploy job'
-}}
-
+            }
+        }
     }
 }
